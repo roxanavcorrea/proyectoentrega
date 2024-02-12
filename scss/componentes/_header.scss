@@ -1,0 +1,56 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+/*HTML INDEX*/
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fac0d5c6;
+}
+
+.container-fluid { 
+    display: flex;
+    flex-direction: column;
+
+    .navbar-brand {
+        width: 100%;
+        margin-left: 90%;
+    }
+} 
+
+.contenedorlogo {
+    display: flex;
+    justify-content: center;
+
+    .Logo {
+        width: 20%;
+        border-radius: 80%;
+    }
+}
+
+a {
+    @include anclas;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Main */
+
+main {
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0px;
+}

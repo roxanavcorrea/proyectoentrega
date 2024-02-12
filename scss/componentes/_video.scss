@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+/* .video */
+
+.Fondo {
+    background-image: url(https://i.pinimg.com/564x/b8/3d/e8/b83de88981b83efb0c42e3d4d71b7cca.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    margin: auto;
+    text-transform: center;
+    padding: 1rem;
+    width: 55%;
+
+    video {
+        width: 100%;
+    }
+}

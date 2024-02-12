@@ -1,0 +1,65 @@
+/*Vista Tablet*/
+/*768px hasta 1023*/
+
+@media (max-width:1023px) {
+
+    /*header*/
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-fluid .navbar-brand {
+        width: 40%;
+    }
+
+    .container-fluid .navbar-brand .Logo {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        margin-right: 20px;
+        justify-content: center;
+    }
+
+    .video video {
+        width: 350px;
+    }
+
+    .Logo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .albumcompleto {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+}
+
+
+
+/*Vista celular*/
+/*0 hasta 768px*/
+
+@media (max-width:768px) {
+    .video {
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .video video {
+        width: 250px;
+    }
+
+    .albumcompleto {
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        grid-template-columns: minmax(150px,  1fr);
+    }
+}

@@ -1,0 +1,19 @@
+@import "../base/variables";
+
+/* Index */
+
+.grupoimagenes {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .imagenesindex {
+        border: 1px solid #ccc;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+} 

@@ -1,0 +1,45 @@
+@import "../base/variables";
+
+/*HTML TOUR*/
+
+.bordes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    span {
+        text-align: center;
+        padding: 5px;
+        background-color: $color-violeta;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    h2,
+p {
+    text-align: center;
+    margin: 15px;
+}
+
+.tour {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 4px solid $color-rosapastel;
+    border-radius: 5%;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    gap: 20px;
+}
+
+}
+
+
+
+

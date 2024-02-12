@@ -1,0 +1,59 @@
+@import "../base/variables";
+
+/* Musica */
+
+.albumcompleto {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    width: 70%;
+    text-transform: uppercase;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    box-shadow: 2px 3px 10px $color-negro;
+    animation: latido infinite 5s 3s;
+
+    div p {
+        text-align: center;
+        background-color: $color-violeta;
+    }
+
+    
+@keyframes latido{
+    0%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    60%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+}

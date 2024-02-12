@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-image: url(https://i.pinimg.com/564x/7c/8b/9a/7c8b9ad1d3d194e553322885363913f0.jpg);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+/*HTML INDEX*/
+/* Header */
+header {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 192, 213, 0.7764705882);
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+.container-fluid .navbar-brand {
+  width: 100%;
+  margin-left: 90%;
+}
+
+.contenedorlogo {
+  display: flex;
+  justify-content: center;
+}
+.contenedorlogo .Logo {
+  width: 20%;
+  border-radius: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+/* Index */
+.grupoimagenes {
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.grupoimagenes .imagenesindex {
+  border: 1px solid #ccc;
+}
+.grupoimagenes .imagenesindex img {
+  width: 300px;
+  height: 300px;
+}
+
+/* .video */
+.Fondo {
+  background-image: url(https://i.pinimg.com/564x/b8/3d/e8/b83de88981b83efb0c42e3d4d71b7cca.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  display: flex;
+  margin: auto;
+  text-transform: center;
+  padding: 1rem;
+  width: 55%;
+}
+.video video {
+  width: 100%;
+}
+
+/* Musica */
+.albumcompleto {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  width: 70%;
+  text-transform: uppercase;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  box-shadow: 2px 3px 10px #333333;
+  animation: latido infinite 5s 3s;
+}
+.albumcompleto div p {
+  text-align: center;
+  background-color: #f5deff;
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*HTML TOUR*/
+.bordes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bordes span {
+  text-align: center;
+  padding: 5px;
+  background-color: #f5deff;
+}
+.bordes h1 {
+  text-align: center;
+  margin: 15px;
+}
+.bordes h2,
+.bordes p {
+  text-align: center;
+  margin: 15px;
+}
+.bordes .tour {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 4px solid #ffdefb;
+  border-radius: 5%;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Formulario */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f5deff;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btnformulario {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* footer */
+footer {
+  margin: 0px;
+  padding: 20px;
+  background-color: rgba(250, 192, 213, 0.7764705882);
+}
+
+/*Vista Tablet*/
+/*768px hasta 1023*/
+@media (max-width: 1023px) {
+  /*header*/
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid .navbar-brand {
+    width: 40%;
+  }
+  .container-fluid .navbar-brand .Logo {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .video video {
+    width: 350px;
+  }
+  .Logo {
+    grid-template-columns: 1fr 1fr;
+  }
+  .albumcompleto {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+/*Vista celular*/
+/*0 hasta 768px*/
+@media (max-width: 768px) {
+  .video {
+    width: 100%;
+    margin-right: 0;
+  }
+  .video video {
+    width: 250px;
+  }
+  .albumcompleto {
+    grid-template-columns: minmax(150px, 1fr);
+  }
+  .albumcompleto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
