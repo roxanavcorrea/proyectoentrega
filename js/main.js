@@ -63,19 +63,19 @@ do {
             break;
         case 1:
             alert("Elegiste Música. ¡Que lo disfrutes!");
-            window.location.href = "../html/Musica.html";
+            window.location.href = "./html/Musica.html";
             break;
         case 2:
             alert("Elegiste Videos. ¡Que lo disfrutes!");
-            window.location.href = "../html/Video.html";
+            window.location.href = "./html/Video.html";
             break;
         case 3:
             alert("Elegiste Tour. ¡Que lo disfrutes!");
-            window.location.href = "../html/Tour.html";
+            window.location.href = "./html/Tour.html";
             break;
         case 4:
             alert("Elegiste Registrarse. Gracias por unirte.");
-            window.location.href = "../html/Registrate.html";
+            window.location.href = "./html/Registrate.html";
             break;
         default:
             alert("Opción no válida.");
