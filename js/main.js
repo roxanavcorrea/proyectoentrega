@@ -81,17 +81,13 @@ const manejarOpciones = (validarEdadCallback) => {
         }
     } while (isNaN(opcion) || opcion < 0 || opcion > 4);
 
-    // Después de que el usuario haya realizado sus selecciones
-    // Por ejemplo, si queres verificar si el usuario seleccionó la opción 1 (Música)
-    const opcionBuscada = 1;
-    if (buscarOpcion(seleccionesUsuario, opcionBuscada) !== undefined) {
-        console.log("El usuario seleccionó la opción de Música.");
-        // Aca se puede realizar alguna acción basada en la selección del usuario
+    // Filtrar las selecciones del usuario para obtener solo las opciones mayores a 2
+    const seleccionesFiltradas = seleccionesUsuario.filter(opcion => opcion > 2);
+    if (seleccionesFiltradas.length > 0) {
+        console.log("El usuario seleccionó opciones mayores a 2.");
     } else {
-        console.log("El usuario no seleccionó la opción de Música.");
-        // Aca se puede realizar otra acción si el usuario no seleccionó la opción de Música
+        console.log("El usuario no seleccionó opciones mayores a 2.");
     }
-}
+};
 
-    // Llamada a la función principal
-    manejarOpciones(validarEdad);
+manejarOpciones(validarEdad);
