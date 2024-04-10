@@ -1,0 +1,28 @@
+/*JAVASCRIPT*/
+
+.opciones {
+    background-color: rgba(255, 194, 209, 0.593);
+    border-radius: 10px;
+    margin: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boton {
+    background-color: rgba(200, 182, 255, 1);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: rgba(255, 143, 171, 1);
+    }
+}
