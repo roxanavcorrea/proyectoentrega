@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+/* Estilos para el modo claro */
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.bordes {
+
+    h1,
+    p {
+        color: royalblue;
+    }
+}
+
+p {
+    color: palevioletred;
+}
+
+.boton {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.boton-light {
+    background-color: #333333;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #555555;
+    }
+}
+
+/* Estilos para el modo oscuro */
+
+.dark-mode {
+    body {
+        background-color: #f0f0f0;
+        color: #ffffff;
+    }
+
+    h1,
+    p {
+        color: #ffffff;
+    }
+
+    .boton {
+        background-color: #ffffff;
+        color: #333333;
+
+        &:hover {
+            background-color: #dddddd;
+        }
+    }
+}
