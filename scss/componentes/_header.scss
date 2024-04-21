@@ -2,7 +2,6 @@
 @import "../base/mixin";
 
 /*HTML INDEX*/
-
 /* Header */
 
 header {
@@ -12,10 +11,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fac0d5c6;
+    background-color: rgba(250, 192, 213, 0.7764705882);
 }
 
-.container-fluid { 
+.container-fluid {
     display: flex;
     flex-direction: column;
 
@@ -23,7 +22,7 @@ header {
         width: 100%;
         margin-left: 90%;
     }
-} 
+}
 
 .contenedorlogo {
     display: flex;
@@ -36,9 +35,34 @@ header {
 }
 
 a {
-    @include anclas;
+    text-decoration: none;
+    color: #333333;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+p a {
+    background-color: #af4cac;
+
+    /* Color de fondo del botón */
+    color: white;
+
+    /* Color del texto del botón */
+    padding: 10px 20px;
+
+    /* Espaciado interno del botón */
+    text-decoration: none;
+
+    /* Quita el subrayado del enlace */
+    border-radius: 5px;
+
+    /* Borde redondeado del botón */
+
+    &:hover {
+        background-color: #a04566;
+
+        /* Cambio de color al pasar el mouse sobre el botón */
+    }
 }
 
 /* Main */
