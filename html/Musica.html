@@ -63,29 +63,29 @@
             <div class="albumcompleto"> 
                 <div>
                     <img src="../img/1200x1200bf-60.jpg" class="albumcompleto" alt="My world" >
-                    <p> My World</p>
+                    <p> "My World", precio: 6500 </p>
                     
                 </div>
                 <div>
                     <img src="../img/6691017_orig.png" class="albumcompleto" alt="Journals">
-                    <p> Journals </p>
+                    <p> "Journals", precio: 8500 </p>
                 </div>
                 <div>
                     <img src="../img/justin bieber my world unplugged.jpg" class="albumcompleto"
                         alt="My World Acoustic">
-                        <p>  My world Acoustic </p>
+                        <p>  "My World; acoustic", precio: 8000 </p>
                 </div>
                 <div>
                     <img src="../img/justin_bieber_purpose_vinyl_front_cover_f3c094ef-dd75-4351-89c0-2ac74f8e64ea_1024x1024.webp" class="albumcompleto" alt="Purpose">
-                        <p> Purpose </p>
+                        <p> "Purpose", precio: 10000 </p>
                 </div>
                 <div>
                     <img src="../img/under-the-mistletoe-photo-1.jpg" class="albumcompleto" alt="The Mistletoe">
-                    <p> The Mistletoe </p>
+                    <p> "The Mistletoe", precio: 9000 </p>
                 </div>
                 <div>
                     <img src="../img/justinb_believe_coverar_3000dpi300rgb1000181196_1.jpg" class="albumcompleto" alt="Believe">
-                        <p>  Believe </p>
+                        <p>  "Believe", precio: 8000 </p>
                 </div>
             </div>
             <div class="botones">           
@@ -110,6 +110,20 @@
 
     <script src="./js/main.js"></script>
     <script src="../js/opciones.js"></script>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const boton = document.querySelector('.boton');
+    
+            // Cambiar la clase del body para alternar entre los modos claro y oscuro
+            body.classList.toggle('dark-mode');
+    
+            // Cambiar la clase del botón para reflejar el modo claro u oscuro
+            boton.classList.toggle('boton-light');
+        }
+    </script>
+    
 </body>
 
 </html>

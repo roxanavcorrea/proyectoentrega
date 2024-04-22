@@ -106,11 +106,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Obtener el carrito almacenado en localStorage al cargar la página
-    const carritoAlmacenado = localStorage.getItem('carrito');
-    if (carritoAlmacenado) {
-        carrito = JSON.parse(carritoAlmacenado);
-    }
-
     elegirServicio();
 });

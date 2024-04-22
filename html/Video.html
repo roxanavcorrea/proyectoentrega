@@ -81,6 +81,20 @@
     <!-- JavaScript -->
 
     <script src="./js/main.js"></script>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const boton = document.querySelector('.boton');
+    
+            // Cambiar la clase del body para alternar entre los modos claro y oscuro
+            body.classList.toggle('dark-mode');
+    
+            // Cambiar la clase del botón para reflejar el modo claro u oscuro
+            boton.classList.toggle('boton-light');
+        }
+    </script>
+    
 </body>
 
 </html>
