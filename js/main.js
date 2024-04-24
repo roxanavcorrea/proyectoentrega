@@ -1,4 +1,3 @@
-//Solucionar que el botón funcione en las otras páginas, solo funciona en el inicio
 function toggleMode() {
     const body = document.body;
     const boton = document.querySelector('.boton');
