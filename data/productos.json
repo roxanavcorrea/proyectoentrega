@@ -2,31 +2,31 @@
     {
         "titulo": "My World",
         "precio": 6500,
-        "img": "../img/1200x1200bf-60.jpg"
+        "img": "./img/1200x1200bf-60.jpg"
     },
     {
         "titulo": "Journals",
         "precio": 8500,
-        "img": "../img/6691017_orig.png"
+        "img": "./img/6691017_orig.png"
     },
     {
         "titulo": "My World Acoustic",
         "precio": 8000,
-        "img": "../img/justin bieber my world unplugged.jpg"
+        "img": "./img/justin bieber my world unplugged.jpg"
     },
     {
         "titulo": "Purpose",
         "precio": 10000,
-        "img": "../img/justin_bieber_purpose_vinyl_front_cover_f3c094ef-dd75-4351-89c0-2ac74f8e64ea_1024x1024.webp"
+        "img": "./img/justin_bieber_purpose_vinyl_front_cover_f3c094ef-dd75-4351-89c0-2ac74f8e64ea_1024x1024.webp"
     },
     {
         "titulo": "The Mistletoe",
         "precio": 9000,
-        "img": "../img/under-the-mistletoe-photo-1.jpg"
+        "img": "./img/under-the-mistletoe-photo-1.jpg"
     },
     {
         "titulo": "Believe",
         "precio": 8000,
-        "img": "../img/justinb_believe_coverar_3000dpi300rgb1000181196_1.jpg"
+        "img": "./img/justinb_believe_coverar_3000dpi300rgb1000181196_1.jpg"
     }
 ]
