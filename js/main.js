@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Manejar la interacción del usuario al cargar la página
     const subscribeMessage = document.getElementById('subscribe-message');
-    subscribeMessage.addEventListener('click', manejarSuscripcion);
+    subscribeMessage.addEventListener('click', manejarSuscripcion); 
 
     
     const manejarOpciones = () => {
