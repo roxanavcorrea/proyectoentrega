@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h3>${producto.titulo}</h3>
                     <p>$${producto.precio}</p>
                 `;
+                document.body.appendChild(div); 
 
                 const btn = document.createElement("button");
                 btn.classList.add("boton");
