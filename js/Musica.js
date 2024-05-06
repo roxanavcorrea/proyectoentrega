@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("El DOM ha sido cargado correctamente.");
-    
+
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const contenedorProductos = document.querySelector("#albumcompleto");
     const carritoVacio = document.querySelector("#carrito-vacio");
     const carritoProductos = document.querySelector("#carrito-productos");
     const carritoTotal = document.querySelector("#carrito-total");
 
-    fetch("/data/productos.json") 
+    fetch("./data/productos.json") 
         .then(response => response.json())
         .then(data => {
             console.log("Datos obtenidos del archivo JSON:", data);
