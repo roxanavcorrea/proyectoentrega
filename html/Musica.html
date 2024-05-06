@@ -15,9 +15,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../scss/componentes/_modo.scss">
-
-
 </head>
 
 <body>
@@ -67,7 +64,6 @@
 
             </div>
         </section>
-
         <section class="container">
             <h2>Carrito de compras</h2>
             <div class="carrito">
@@ -75,13 +71,11 @@
                     <h4>Tu carrito esta vacio</h4>
                 </div>
                 <div class="carrito-productos d-none" id="carrito-productos">
-
-                    <!-- JavaScript - Musica.js  -->
-
                 </div>
                 <div class="carrito-total">
                     <h2>Total: <span id="carrito-total">$0</span></h2>
                 </div>
+                <button class="boton"> Finalizar comprar </button>
             </div>
         </section>
     </main>
@@ -96,27 +90,9 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <!-- JavaScript - Modo Oscuro/claro -->
-
-    <script>
-        function toggleMode() {
-            const body = document.body;
-            const boton = document.querySelector('.boton');
-
-            // Cambiar la clase del body para alternar entre los modos claro y oscuro
-            body.classList.toggle('dark-mode');
-
-            // Cambiar la clase del botón para reflejar el modo claro u oscuro
-            boton.classList.toggle('boton-light');
-        }
-
-        function agregarCarrito(producto) {
-            console.log(producto);
-            console.log(carrito);
-        }
-    </script>
-
+    <!-- JavaScript -->
     <script src="../js/Musica.js"></script>
+    <script src="../js/main.js"></script>
 
 
 </body>
