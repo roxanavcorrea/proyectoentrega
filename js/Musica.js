@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
             data.forEach(producto => {
                 const div = document.createElement("div");
+                div.id = "producto-" + producto.id;
+                div.classList.add("producto");
                 div.innerHTML = `
                     <img class="albumcompleto" src="${producto.img}" alt="${producto.titulo}">
                     <h3>${producto.titulo}</h3>
