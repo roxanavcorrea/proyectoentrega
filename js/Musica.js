@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const carritoTotal = document.querySelector("#carrito-total");
 
     fetch("../data/productos.json")
-        .then(res => res.json())
+        .then(response => response.json())
         .then(data => mostrarProductos(data));
 
     
