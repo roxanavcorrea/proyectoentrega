@@ -8,32 +8,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const carritoTotal = document.querySelector("#carrito-total");
 
     fetch("/data/productos.json") 
-        .then(response => response.json())
-        .then(data => {
-            console.log("Datos obtenidos del archivo JSON:", data);
+        .then(res => res.json())
+        .then(data => mostrarProductos(data));
 
-            data.forEach(producto => {
-                const div = document.createElement("div");
-                div.classList.add("producto"); 
-                div.innerHTML = `
-                    <img class="albumcompleto" src="${producto.img}" alt="${producto.titulo}">
-                    <h3>${producto.titulo}</h3>
-                    <p>$${producto.precio}</p>
-                `;
-                document.body.appendChild(div); 
+    
+    const mostrarProductos = (productos) => {
+        productos.forEach(producto => {
+            const div = document.createElement("div");
+            div.classList.add("producto"); 
+            div.innerHTML = `
+                <img class="albumcompleto" src="${producto.img}" alt="${producto.titulo}">
+                <h3>${producto.titulo}</h3>
+                <p>$${producto.precio}</p>
+            `;
 
-                const btn = document.createElement("button");
-                btn.classList.add("boton");
-                btn.innerText = "Agregar Al Carrito";
+            const btn = document.createElement("button");
+            btn.classList.add("boton");
+            btn.innerText = "Agregar Al Carrito";
 
-                btn.addEventListener("click", () => {
-                    agregarAlCarrito(producto);
-                })
+            btn.addEventListener("click", () => {
+                agregarAlCarrito(producto);
+            })
 
-                div.append(btn);
-                contenedorProductos.append(div);
-            });
+            div.append(btn);
+            contenedorProductos.append(div);
         });
+    }
 
     function actualizarCarrito() {
         if (carrito.length === 0) {
