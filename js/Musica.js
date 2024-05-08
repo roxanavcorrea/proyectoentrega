@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const carritoProductos = document.querySelector("#carrito-productos");
     const carritoTotal = document.querySelector("#carrito-total");
 
-    fetch("/data/productos.json") 
+    fetch("../data/productos.json")
         .then(res => res.json())
         .then(data => mostrarProductos(data));
 
