@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let usuario = prompt("Bienvenido! Ingrese su nombre:");
         while (usuario === "" || usuario === null) {
             usuario = prompt("Debes ingresar un nombre válido para continuar. Por favor, ingrese su nombre:");
-        }
+        };
         console.log("Usuario:", usuario);
         alert ("Bienvenido, " + usuario + ", a la fan page de tu cantante favorito!");
 
@@ -84,11 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
             alert ("¡Tenes 18 años! Bienvenido a la fan page.");
         } else {
             alert ("Bienvenido a la fan page.");
-        }
+        };
 
         // Array para almacenar las selecciones de opciones del usuario
         const seleccionesUsuario = [];
-
         let opcion;
         do {
             opcion = prompt(`Por favor, selecciona una opción:
@@ -98,11 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
             3. Tour
             4. Registrarse`);
             opcion = parseInt(opcion);
-
             if (!isNaN(opcion) && opcion >= 0 && opcion <= 4) {
                 seleccionesUsuario.push(opcion);
                 console.log("Opción seleccionada:", opcion);
-
                 switch (opcion) {
                     case 0:
                         Swal.fire ("¡Gracias por visitarnos!");

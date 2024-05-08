@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("El DOM ha sido cargado correctamente.");
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const contenedorProductos = document.querySelector("#albumcompleto");
@@ -93,5 +91,4 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Actualizando total del carrito...");
         const total = carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
         carritoTotal.innerText = `$${total}`;
-    }
-});
+    };
