@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("El DOM ha sido cargado correctamente.");
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    const contenedorProductos = document.querySelector("#albumcompleto");
+    const contenedorProductos = document.getElementById("albumcompleto");
     const carritoVacio = document.querySelector("#carrito-vacio");
     const carritoProductos = document.querySelector("#carrito-productos");
     const carritoTotal = document.querySelector("#carrito-total");
